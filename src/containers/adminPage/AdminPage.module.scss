@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  font-family: 'Montserrat' !important;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+  min-height: 80svh;
+  margin-top: 33px;
+}
+
+.img {
+  padding-top: 1px;
+  width: 17px;
+  height: 17px;
+}

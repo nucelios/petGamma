@@ -1,0 +1,21 @@
+.title {
+	color: #864ce9;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	margin-left: 10px;
+}
+
+.menu {
+	width: 300px;
+	height: 100%;
+	padding: 10px 0;
+	border: none;
+	border-radius: 20px;
+	font-size: 13px !important;
+	font-family: 'Montserrat';
+
+	@media screen and (max-width: 950px) {
+		display: none;
+	}
+}

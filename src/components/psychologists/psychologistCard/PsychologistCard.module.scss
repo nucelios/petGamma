@@ -1,0 +1,375 @@
+.cardWrapper {
+	position: relative;
+
+	.heartContainer {
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		z-index: 999;
+	}
+
+	.heart {
+		font-size: 21px;
+		transition: color 0.3s ease;
+		color: #834eeb80;
+
+		&:hover {
+			color: red;
+		}
+	}
+}
+
+.card {
+	display: flex;
+	padding: 20px;
+	align-items: flex-start;
+	flex-shrink: 0;
+	min-height: 290px;
+	justify-content: flex-start;
+	.cover {
+		position: relative;
+		width: 100%;
+		height: 200px;
+
+		.card_img {
+			width: 250px;
+			height: 250px;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+
+		.experienceYears {
+			position: absolute;
+			left: 10px;
+			top: 15px;
+			border-radius: 50px;
+			background: rgba(245, 245, 245, 0.5);
+			padding: 5px 10px;
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+		}
+	}
+
+	.card_button {
+		display: flex;
+		width: 227px;
+		padding: 15px 5px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		color: #fff;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		border-radius: 100px;
+		background: #9f67fd;
+		position: absolute;
+		left: 13px;
+		bottom: -33px;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		border: 1px solid #9f67fd;
+	}
+	&:hover .card_button {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.education {
+		color: #9f9f9f;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.container_city_country {
+		display: flex;
+		margin: 10px 0;
+		.container_city {
+			display: flex;
+			padding: 5px 10px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 50px;
+			background: rgba(131, 78, 235, 0.2);
+			margin: 0 5px 0 0;
+			.city {
+				color: #9f67fd;
+				font-family: Montserrat;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+		.container_country {
+			display: flex;
+			padding: 5px 10px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 50px;
+			background: rgba(131, 78, 235, 0.2);
+			margin: 0 5px 0 0;
+
+			.country {
+				color: #9f67fd;
+				font-family: Montserrat;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+	}
+	.hr_line {
+		border-top: 2px solid #f5f5f5;
+	}
+
+	.container_therapyMethod {
+		display: flex;
+		margin: 5px 0;
+		flex-wrap: wrap;
+
+		.therapyMethod {
+			display: flex;
+			padding: 5px 10px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 50px;
+			background: #f5f5f5;
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			margin: 0 5px 5px 0;
+		}
+	}
+
+	.description {
+		color: #4a4a4a;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.cost {
+		color: #7ed957;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		position: absolute;
+		bottom: 17px;
+	}
+	&:hover .cost {
+		color: #9f67fd;
+	}
+}
+
+:global(.ant-card .ant-card-body) {
+	padding: 7px 35px 0 20px;
+}
+
+:global(.ant-card .ant-card-meta-title) {
+	color: #4a4a4a;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	max-width: 360px;
+}
+
+@media screen and (max-width: 1468px) {
+	.card {
+		display: flex;
+		padding: 16px;
+		align-items: flex-start;
+		min-height: 270px;
+
+		.cover {
+			position: relative;
+			width: 100%;
+			height: 150px;
+
+			.card_img {
+				width: 230px;
+				height: 230px;
+				object-fit: cover;
+				border-radius: 12px;
+			}
+			.experienceYears {
+				left: 10px;
+				top: 10px;
+				padding: 4px 8px;
+				font-size: 12px;
+			}
+		}
+
+		.card_button {
+			display: flex;
+			width: 204px;
+			padding: 10px 4px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			color: #fff;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			border-radius: 100px;
+			background: #9f67fd;
+			position: absolute;
+			left: 12px;
+			bottom: -67px;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+			border: 1px solid #9f67fd;
+		}
+		&:hover .card_button {
+			opacity: 1;
+			cursor: pointer;
+		}
+
+		.education {
+			font-size: 11px;
+		}
+
+		.country,
+		.city {
+			font-size: 11px;
+		}
+
+		.hr_line {
+			border-top: 1px solid #f5f5f5;
+		}
+
+		.description {
+			font-size: 11px;
+			margin: 3px 0;
+		}
+
+		.cost {
+			font-size: 22px;
+			position: absolute;
+			bottom: 17px;
+		}
+	}
+}
+
+@media (max-width: 1290px) {
+	.cardWrapper {
+		width: 249px;
+	}
+	.card {
+		display: block;
+		width: 248px !important;
+		padding: 10px;
+		height: 470px;
+
+		.cover {
+			width: 100%;
+			height: auto;
+			.card_img {
+				width: 230px;
+				height: 200px;
+				border-radius: 10px;
+			}
+			.experienceYears {
+				display: flex;
+				padding: 10px 15px;
+				align-items: flex-start;
+				gap: 10px;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				border-radius: 50px;
+				background: rgba(245, 245, 245, 0.5);
+				font-size: 12px;
+			}
+
+			.card_button {
+				display: flex;
+				width: 204px;
+				padding: 10px 4px;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+				color: #fff;
+				font-family: Montserrat;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+				border-radius: 100px;
+				background: #9f67fd;
+				opacity: 1;
+				transition: opacity 0.3s ease;
+				border: 1px solid #9f67fd;
+				position: absolute;
+				bottom: -243px;
+				left: 13px;
+			}
+		}
+
+		.education {
+			font-size: 10px;
+			max-width: 273px;
+		}
+
+		.container_city_country {
+			.container_city,
+			.container_country {
+				padding: 5px 8px;
+			}
+		}
+
+		.hr_line {
+			border-top-width: 1px;
+			max-width: 260px;
+		}
+
+		.container_therapyMethod {
+			max-width: 260px;
+			.therapyMethod {
+				padding: 5px 8px;
+				font-size: 9px;
+			}
+		}
+
+		.description {
+			display: none;
+		}
+
+		.cost {
+			text-align: center;
+			font-size: 22px;
+			position: absolute;
+			bottom: 57px;
+			left: 84px;
+		}
+	}
+
+	:global(.ant-card .ant-card-body) {
+		padding: 3px 5px 0 10px;
+	}
+
+	:global(.ant-card .ant-card-meta-title) {
+		font-size: 16px;
+	}
+}

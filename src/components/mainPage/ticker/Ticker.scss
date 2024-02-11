@@ -1,0 +1,36 @@
+.ticker {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	min-height: 10vw;
+	display: flex;
+	align-items:center;
+	position: relative;
+	margin: 10vw 0;
+
+	&__content {
+		display: flex;
+		position: absolute;
+		width: auto;
+		animation: marquee 10s linear infinite;
+	}
+	&__text {
+		color: #7ed957;
+		font-family: Montserrat;
+		font-size: 4vw;
+		border-radius: 500px;
+		border: 0.15vw solid #7ed957;
+		padding: 1vw 3vw;
+		margin: 1vw;
+		font-weight: 500;
+	}
+}
+
+@keyframes marquee {
+	from {
+		left: 0%;
+	}
+	to {
+		transform: translateX(calc(-38% - 100vw));
+	}
+}

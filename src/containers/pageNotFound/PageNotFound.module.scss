@@ -1,0 +1,47 @@
+
+.container-404 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 50px;
+}
+
+
+.img-404 {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.header-404 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+
+.text-404 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+
+.link-404 {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #FFA500; 
+  color: #FFFFFF; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  
+  &:hover {
+    background-color: #FF7F00; 
+    color: #ffffff; 
+  }
+  
+  &:active {
+    background-color: #FF4500; 
+  }
+}

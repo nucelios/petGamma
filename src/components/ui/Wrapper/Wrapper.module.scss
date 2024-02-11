@@ -1,0 +1,42 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+
+.wrapper {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	flex-direction: column;
+	width: max-content;
+	font-family: "Montserrat", sans-serif !important;
+	padding: 20px 20px;
+	z-index: 1001;
+	user-select: none;
+	@media screen and (max-width: 400px) {
+		width: 360px !important;
+	}
+}
+
+.wrapper_close {
+	color: #9f9f9f;
+	cursor: pointer;
+	.close_svg {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		cursor: pointer;
+		width: 25px;
+		height: 30px;
+		z-index: 1000;
+	}
+}

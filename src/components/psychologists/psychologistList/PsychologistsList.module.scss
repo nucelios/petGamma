@@ -1,0 +1,32 @@
+.container {
+	padding: 0 10px;
+	@media (max-width: 700px) {
+		margin: 0 10px;
+	}
+	.form {
+		width: 600px;
+		display: flex;
+	}
+	.count {
+		color: #9f67fd;
+		padding: 20px 10px;
+	}
+	.list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		grid-auto-flow: row dense;
+		@media (max-width: 1300px) {
+			justify-items: center;
+			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+			grid-column-gap: 6px;
+			grid-row-gap: 6px;
+		}
+	}
+}
+
+.viewedPsychologists {
+	display: flex;
+	overflow-x: auto;
+	padding: 20px;
+}

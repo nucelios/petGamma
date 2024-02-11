@@ -1,0 +1,149 @@
+@import '../../../assets/styles/config';
+
+.layout {
+	font-family: Montserrat !important;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+	background-color: #fbf9ff;
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 800px;
+		padding: 20px 30px;
+		border-radius: 20px;
+		background: #fff;
+
+		.label_info {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.option {
+			white-space: wrap;
+		}
+		.ant-select-selection-item {
+			@media (max-width: 400px) {
+				overflow: hidden;
+				white-space: pre;
+				text-overflow: ellipsis;
+				max-width: 200px;
+				font-size: 10px;
+			}
+			@media (max-width: 600px) {
+				font-size: 10px !important;
+				max-width: 200px;
+			}
+		}
+
+		.button {
+			font-size: 16px;
+			height: 50px;
+			background-color: $color-purple;
+			border-radius: 10px;
+			color: #fff;
+			font-family: Montserrat !important;
+			width: 100%;
+			&:disabled {
+				background-color: #9f9f9f;
+			}
+
+			@media (max-width: 400px) {
+				font-size: 15px;
+			}
+		}
+
+		.text {
+			font-family: Montserrat !important;
+			margin-bottom: 10px;
+			@media (max-width: 400px) {
+				font-size: 13px !important;
+			}
+		}
+
+		.form_title {
+			font-weight: 500;
+			margin: 0;
+			@media (max-width: 400px) {
+				font-size: 15px;
+			}
+		}
+
+		.input {
+			background: #f5f5f5 !important;
+			border: none;
+			height: 40px;
+		}
+
+		.input--grey input,
+		.ant-select-selector,
+		.ant-picker {
+			font-family: Montserrat !important;
+			min-height: 40px;
+			background: #f5f5f5 !important;
+			border: none;
+			&::placeholder {
+				font-size: 12px;
+			}
+		}
+		label {
+			font-family: Montserrat !important;
+			font-size: 12px;
+			display: block;
+			color: rgba(0, 0, 0, 0.314);
+			margin-bottom: 5px;
+			@media (max-width: 400px) {
+				font-size: 10px !important;
+			}
+		}
+		.ant-celect {
+			display: flex;
+			align-items: center;
+			&::placeholder {
+				font-family: Montserrat !important;
+				font-size: 12px;
+			}
+		}
+		.ant-picker {
+			width: 100%;
+		}
+		.ant-input-number-prefix {
+			color: rgba(0, 0, 0, 0.314);
+		}
+		.text-area {
+			font-family: Montserrat !important;
+			min-height: 100px;
+		}
+		.ant-upload-list {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 5px;
+
+			.ant-upload {
+				height: 10px !important;
+
+				button {
+					background-color: #f5f5f5;
+					color: rgba(0, 0, 0, 0.383);
+					border: none;
+					&:hover {
+						background-color: #a7a6a6;
+					}
+				}
+			}
+		}
+	}
+}
+
+.photo-block {
+	display: flex;
+	&-btn {
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+}

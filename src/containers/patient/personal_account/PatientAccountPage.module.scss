@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	font-family: 'Montserrat' !important;
+	gap: 10px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 20px 40px;
+	width: 100%;
+	@media screen and (max-width: 950px) {
+		flex-direction: column;
+		gap: -10px;
+	}
+	@media screen and (max-width: 950px) {
+		display: block;
+	}
+}
+
+.content {
+	flex: 1;
+	overflow: auto;
+	min-height: 80svh;
+	margin-top: 33px;
+	@media screen and (max-width: 950px) {
+		margin-top: 15px;
+	}
+}
+
+.img {
+	padding-top: 1px;
+	width: 17px;
+	height: 17px;
+}
+.sds {
+	display: flex;
+	flex-direction: column;
+}

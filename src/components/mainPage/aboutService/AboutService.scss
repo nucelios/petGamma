@@ -1,0 +1,60 @@
+.about-service {
+	display: flex;
+	gap: 10%;
+	@media (max-width: 500px) {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__item {
+		margin-bottom: 2vw;
+	}
+	&__text {
+		width: 45%;
+		padding-top: 4vw;
+		@media (max-width: 500px) {
+			width: 100%;
+		}
+		.main-title {
+			font-family: Montserrat;
+			color: #4a4a4a;
+			font-size: 3vw;
+			font-weight: 900;
+			@media (max-width: 450px) {
+				font-size: 23px;
+			}
+		}
+		.title {
+			color: #9f67fd;
+			font-family: Montserrat;
+			font-size: 1.5vw;
+			font-weight: 500;
+			@media (max-width: 450px) {
+				font-size: 16px;
+			}
+		}
+		.text {
+			font-family: Montserrat;
+			font-size: 1vw;
+			color: #4a4a4a;
+			font-style: normal;
+			font-weight: 400;
+			@media (max-width: 450px) {
+				font-size: 13px;
+			}
+		}
+	}
+	&__illustration {
+		width: 55%;
+		height: 100%;
+		@media (max-width: 500px) {
+			width: 100%;
+			text-align: center;
+		}
+		.service-illustration {
+			width: 100%;
+			object-fit: contain;
+			object-position: center;
+		}
+	}
+}

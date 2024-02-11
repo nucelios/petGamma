@@ -1,0 +1,19 @@
+.img {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+}
+.text {
+	color: #9f9f9f;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 50svh;
+}

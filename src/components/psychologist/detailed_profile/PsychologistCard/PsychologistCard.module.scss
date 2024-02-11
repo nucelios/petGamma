@@ -1,0 +1,165 @@
+@import '../../../../assets/styles/config';
+
+.psychologist_profile_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.psychologist_profile_card {
+	height: max-content;
+	width: 370px;
+
+	.psychologist_photo_experienceYears {
+		margin: 0 0 20px 0;
+		position: relative;
+
+		.experienceYears {
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			display: flex;
+			padding: 10px 15px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			border-radius: 50px;
+			background: rgba(245, 245, 245, 0.5);
+			position: absolute;
+			left: 16px;
+			top: 16px;
+			z-index: 999;
+		}
+	}
+
+	.card_content {
+		background: #fff;
+		padding: 20px;
+		border-radius: 20px;
+
+		.card_cost {
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			gap: 10px;
+			color: #9f9f9f;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+			margin: 0 0 10px 0;
+			.cost {
+				color: #7ed957;
+				font-family: Montserrat;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: normal;
+			}
+		}
+
+		.card_format,
+		.card_city_country,
+		.card_languages {
+			display: flex;
+
+			.country,
+			.languages {
+				padding: 8px 15px;
+				color: #4a4a4a;
+				font-family: Montserrat;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				border-radius: 50px;
+				background: #f5f5f5;
+				margin: 0 10px 10px 0;
+			}
+		}
+
+		.format {
+			padding: 8px 15px;
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			border-radius: 50px;
+			background: #f5f5f5;
+			margin: 0 10px 10px 0;
+
+			span {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+			}
+
+			.format_icon {
+				color: #7ed957;
+			}
+			.format_img {
+				display: inline-flex;
+				width: 16px;
+			}
+		}
+		.img_photo {
+			border-radius: 10px !important;
+		}
+		.city {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			padding: 8px 15px;
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			border-radius: 50px;
+			background: #f5f5f5;
+			margin: 0 10px 10px 0;
+			.city_icon {
+				color: #9f9f9f;
+			}
+		}
+
+		.lgbt {
+			max-width: 200px;
+			padding: 8px 15px;
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			border-radius: 50px;
+			background: #f5f5f5;
+			margin: 0 10px 10px 0;
+		}
+
+		.card_button {
+			display: flex;
+			margin-top: 10px;
+			width: 100%;
+			padding: 20px 10px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			color: #fff;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			border-radius: 50px;
+			background: #9f67fd;
+			border: none;
+		}
+	}
+}

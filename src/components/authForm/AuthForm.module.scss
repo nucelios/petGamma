@@ -1,0 +1,166 @@
+@import '../../assets/styles/config';
+
+.layout {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fbf9ff;
+	font-family: Montserrat !important;
+	border-radius: 20px;
+	min-height: 80svh;
+	margin-bottom: 40px;
+	.title {
+		color: #2e2e2e;
+		text-align: left;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		@media (max-width: 400px) {
+			font-size: 25px;
+		}
+	}
+	.typography {
+		text-align: center;
+		color: $color-purple;
+		margin: 8px 0;
+		cursor: pointer;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 400px;
+		padding: 20px 30px;
+		border-radius: 20px;
+		background: #fff;
+		@media (max-width: 600px) {
+			max-width: 300px;
+		}
+		.formItem {
+			margin-bottom: 10px;
+		}
+		.label {
+			font-family: Montserrat !important;
+			color: #2e2e2e;
+			font-size: 14px;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+		.input {
+			height: 45px;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			color: #2e2e2e !important;
+		}
+		.button {
+			font-size: 16px;
+			height: 50px;
+			background-color: $color-purple;
+			border-radius: 10px;
+
+			&:disabled {
+				background-color: #9f9f9f;
+			}
+
+			@media (max-width: 400px) {
+				font-size: 15px;
+			}
+		}
+
+		.link {
+			text-align: center;
+			color: $color-purple;
+			font-size: 12px;
+
+			@media (max-width: 400px) {
+				font-size: 10px;
+			}
+		}
+		.radio {
+			display: flex;
+			max-width: 100%;
+		}
+		.error {
+			font-family: Montserrat !important;
+			font-size: 10px;
+			margin-bottom: 10px;
+			color: #2e2e2e;
+			text-align: center;
+			border-radius: 5px !important;
+			height: 45px;
+		}
+		.checkbox {
+			font-family: Montserrat !important;
+			color: #2e2e2e;
+			background: #fff !important;
+			font-size: 12px;
+			width: 150px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+
+			@media (max-width: 400px) {
+				font-size: 10px;
+			}
+		}
+		.footer {
+			display: flex !important;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin: 10px 0;
+		}
+	}
+}
+.formGroup {
+	display: flex;
+	align-items: center;
+}
+.formGroup input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+
+.formGroup label {
+	position: relative;
+	cursor: pointer;
+}
+
+.formGroup label:before {
+	content: '';
+	-webkit-appearance: none;
+	border: 1px solid #d7d7d7;
+	background: #fff;
+	border-radius: 5px;
+	padding: 12px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.formGroup input:checked + label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	width: 6px;
+	height: 14px;
+	border: solid $color-purple;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.title_reset_password {
+	font-family: Montserrat !important;
+}

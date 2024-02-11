@@ -1,0 +1,133 @@
+.colum {
+	color: #2e2e2e;
+	font-size: 14px;
+	min-width: 120px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.colum::before {
+	visibility: hidden;
+}
+
+.scrollableText {
+	max-height: 70px;
+	max-width: 100px;
+	overflow: auto;
+	white-space: pre-line;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #4caf50;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #eaeaea;
+	}
+}
+
+.svg {
+	cursor: pointer;
+	top: 9px;
+	right: 35px;
+	margin-top: 10px;
+	width: 14px;
+	height: 14px;
+	background-color: #f5f5f5;
+}
+.cancel {
+	cursor: pointer;
+	width: 20px;
+	color: #9f9f9f;
+	font-size: 13px;
+}
+.popconfirm {
+	width: 300px;
+	font-size: 14px !important;
+	text-align: left;
+	padding: 10px;
+	margin-left: 10px;
+}
+.error {
+	padding-top: 8px;
+	width: 15px;
+	margin-right: 5px;
+}
+.info {
+	position: absolute;
+	left: 0;
+	top: 3px;
+	font-size: 17px;
+}
+.okText {
+	font-family: 'Montserrat' !important;
+	border-radius: 10px;
+	font-size: 12px !important;
+	text-align: center !important;
+	background-color: #dc2626;
+	width: 100px;
+	height: 35px !important;
+}
+
+.CancelText {
+	font-family: 'Montserrat' !important;
+	border-radius: 10px;
+	text-align: center !important;
+	font-size: 12px !important;
+	color: #3c3c3c;
+	height: 35px !important;
+	background: #f5f5f5;
+}
+
+.info_container {
+	position: relative;
+	span {
+		margin-left: 10px;
+	}
+}
+.editor {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	p {
+		color: #9f9f9f;
+		cursor: pointer;
+	}
+	.setting {
+		margin-right: 10px;
+		cursor: pointer;
+		left: -35px;
+		top: -1px;
+		width: 25px;
+		height: 25px;
+		font-size: 17px;
+		background-color: #f5f5f5;
+		border-radius: 5px;
+		padding: 5px !important;
+	}
+	.disable {
+		cursor: not-allowed;
+		margin-right: 10px;
+		left: -35px;
+		top: -1px;
+		width: 25px;
+		height: 25px;
+		font-size: 17px;
+		background-color: #f5f5f5;
+		border-radius: 5px;
+		padding: 5px !important;
+	}
+}
+.spinner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25svh;
+	@media (max-width: 950px) {
+		height: 60svh;
+	}
+}

@@ -1,0 +1,167 @@
+.cardHeader {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	color: #2e2e2e;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.backButton {
+	border-radius: 10px !important;
+	background: #f5f5f5;
+	padding: 9px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+}
+.bookingTimeSlot {
+	span {
+		font-size: 12px;
+		color: #9f9f9f;
+	}
+	.timeSlotContainer {
+		display: flex;
+		align-items: flex-start;
+		align-content: flex-start;
+		gap: 5px;
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+		margin-top: 5px;
+	}
+	.time {
+		color: #2e2e2e;
+		text-align: center;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+		background: #f5f5f5;
+		border-radius: 10px;
+		cursor: pointer;
+		padding: 9px 19px;
+	}
+}
+.upcomingTime {
+	font-size: 13px !important;
+	width: 105px;
+	padding: 9px 0 !important;
+}
+
+.line {
+	height: 2px;
+	stroke-width: 2px;
+	background-color: #f5f5f5;
+}
+
+.btn {
+	display: flex;
+	width: 100%;
+	padding: 20px 10px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	background: #864ce9;
+	color: #ffffff;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+	background: #9f9f9f;
+	color: #fff;
+}
+
+.activeBtn {
+	background: rgba(134, 76, 233, 0.1);
+}
+
+.bookingFullName {
+	margin-bottom: 10px;
+	p {
+		color: #2e2e2e;
+		font-size: 12px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+		margin-left: 3px;
+	}
+	h2 {
+		padding: 15px;
+		align-items: center;
+		gap: 10px;
+		border-radius: 10px;
+		background: #f5f5f5;
+		color: #2e2e2e;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+}
+
+.bookingSelect {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width: 160px !important;
+	height: 50px;
+	border-radius: 10px;
+	background: #f5f5f5;
+	color: #2e2e2e;
+	font-family: 'Montserrat', sans-serif !important;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	touch-action: manipulation;
+	@media screen and (max-width: 400px) {
+		width: 155px !important;
+	}
+}
+
+.selectDay {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 5px;
+
+	p {
+		margin-bottom: 5px;
+		color: #9f9f9f;
+		font-size: 12px;
+	}
+}
+
+.selectedTime {
+	background: rgba(134, 76, 233, 0.1) !important;
+}
+
+.tab {
+	font-family: 'Montserrat', sans-serif !important;
+	margin: 0 !important;
+	width: 330px;
+}
+
+.bookingHeader {
+	color: #2e2e2e;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.absent {
+	background-color: #f5f5f5;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	color: #9f9f9f;
+	font-size: 13px;
+	text-align: center;
+}

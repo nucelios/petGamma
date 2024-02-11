@@ -1,0 +1,27 @@
+.posts-block-item {
+	display: flex;
+	justify-content: space-between;
+	&-image {
+		height: 300px;
+		width: 245px;
+	}
+	&-description {
+		width: 300px;
+	}
+	&-form-btn {
+		margin-right: 30px;
+	}
+}
+.fr-wrapper {
+	min-height: 350px;
+}
+
+.spinner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40svh;
+	@media (max-width: 950px) {
+		height: 60svh;
+	}
+}

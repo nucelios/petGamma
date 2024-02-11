@@ -1,0 +1,25 @@
+.list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	grid-auto-flow: row dense;
+	@media (max-width: 1700px) {
+		display: flex;
+		width: 700px !important;
+		flex-direction: column;
+		justify-content: start;
+	}
+	@media (max-width: 1290px) {
+		width: 100% !important;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+.spin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60svh;
+}

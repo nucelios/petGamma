@@ -1,0 +1,9 @@
+.article_container {
+	margin: 0 50px;
+
+	.article_list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}

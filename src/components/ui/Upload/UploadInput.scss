@@ -1,0 +1,30 @@
+@import "../../../assets/styles/config";
+.dragger {
+	.upload-text {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Montserrat !important;
+		color: #c5c4c4;
+		@media (max-width: 400px) {
+			flex-direction: column;
+		}
+		.upload-button {
+			background-color: #d9d9d94b;
+			padding: 5px;
+			margin: 5px;
+			border-radius: 4px;
+			color: $color-purple;
+		}
+	}
+	.upload-hint {
+		font-family: Montserrat !important;
+		color: #8e8d8d;
+	}
+
+	.ant-upload-list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,31 @@
+.container {
+	background-color: #fff;
+	min-height: 100svh;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.layout_header {
+	max-width: 1920px;
+	display: flex;
+	background: rgba(255, 255, 255);
+	height: 70px;
+	justify-content: space-between;
+	padding: 0 20px !important;
+	position: fixed;
+	top: -5px;
+	width: 100%;
+	z-index: 1000;
+	@media (max-width: 600px) {
+		padding: 0 20px !important;
+	}
+}
+
+.main {
+	margin-top: 68px;
+	min-height: 90dvh;
+	background-color: #fbf9ff !important;
+}
+
+.layout_footer {
+	background: #4a4a4a;
+}

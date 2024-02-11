@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+::-webkit-scrollbar {
+	display: none;
+}
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+$color-white: #f5f5f5;
+$color-black: #000000;
+$color-purple: #864ce9;
+$color-soft-purple: #e0bcff;
+$color-green: #88ff00;
+$color-gray: #3a3a3a;
+
+$bgcolor-white: #f5f5f5;
+$bgcolor-purple: #834eeb;
+$bgcolor-soft-purple: #e0bcff;
+$bgcolor-green: #88ff00;
+$bgcolor-gray: #3a3a3a;
+$bgcolor-light-gray: #f5f5f5;
+
+$hover-bgcolor: #88ff00;
+$hover-color: black;
+
+%color-white {
+	color: $color-white;
+}
+
+%color-black {
+	color: $color-black;
+}
+
+%color-purple {
+	color: $color-purple;
+}
+
+%color-soft-purple {
+	color: $color-soft-purple;
+}
+
+%color-green {
+	color: $color-green;
+}
+
+%color-gray {
+	color: $color-gray;
+}
+
+%bgcolor-white {
+	background: $bgcolor-white;
+}
+
+%bgcolor-purple {
+	background: $bgcolor-purple;
+}
+
+%bgcolor-soft-purple {
+	background: $bgcolor-soft-purple;
+}
+
+%bgcolor-green {
+	background: $bgcolor-green;
+}
+
+%bgcolor-gray {
+	background: $bgcolor-gray;
+}
+
+%bgcolor-light-gray {
+	background: $bgcolor-light-gray;
+}
+
+%hover {
+	background: $hover-bgcolor;
+	color: $hover-color;
+}
+:where(.css-dev-only-do-not-override-1e6wn80).ant-menu-inline > .ant-menu-item,
+:where(.css-dev-only-do-not-override-1e6wn80).ant-menu-vertical
+	> .ant-menu-item,
+:where(.css-dev-only-do-not-override-1e6wn80).ant-menu-inline
+	> .ant-menu-submenu
+	> .ant-menu-submenu-title,
+:where(.css-dev-only-do-not-override-1e6wn80).ant-menu-vertical
+	> .ant-menu-submenu
+	> .ant-menu-submenu-title {
+	height: 45px;
+	line-height: 45px;
+}
+
+.ant-layout .ant-layout-sider-children {
+	@media screen and (max-width: 830px) {
+		overflow: scroll;
+	}
+}
+
+.ant-layout-sider {
+	width: 300px;
+	background-color: transparent !important;
+}
+
+.ant-layout .ant-layout-sider-children {
+	width: 300px !important;
+}
+.ant-table-container {
+	border-radius: 10px !important;
+}
+.ant-table-wrapper table {
+	width: 100%;
+	text-align: start;
+	border-radius: 10px 10px 0 0;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+.ant-table-wrapper .ant-table-tbody > tr > td {
+	border-bottom: none !important;
+}
+.ant-table-row {
+	height: 50px;
+}
+.ant-table-thead {
+	border-radius: 10px;
+	height: 60px;
+}
+.ant-tooltip-inner {
+	display: flex;
+	width: 280px !important;
+	color: #3c3c3c !important;
+	text-align: left;
+	text-decoration: none;
+	word-wrap: break-word;
+	background-color: #f5f5f5 !important;
+}
+
+:where(.css-dev-only-do-not-override-hem318).ant-menu-light.ant-menu-horizontal
+	> .ant-menu-item::after,
+:where(.css-dev-only-do-not-override-hem318).ant-menu-light
+	> .ant-menu.ant-menu-horizontal
+	> .ant-menu-item::after,
+:where(.css-dev-only-do-not-override-hem318).ant-menu-light.ant-menu-horizontal
+	> .ant-menu-submenu::after,
+:where(.css-dev-only-do-not-override-hem318).ant-menu-light
+	> .ant-menu.ant-menu-horizontal
+	> .ant-menu-submenu::after {
+	display: none !important;
+	border: none !important;
+}
+
+:where(.css-dev-only-do-not-override-f9tg7f).ant-menu-light.ant-menu-horizontal
+	> .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-f9tg7f).ant-menu-light
+	> .ant-menu.ant-menu-horizontal
+	> .ant-menu-item-selected::after,
+:where(.css-dev-only-do-not-override-f9tg7f).ant-menu-light.ant-menu-horizontal
+	> .ant-menu-submenu-selected::after,
+:where(.css-dev-only-do-not-override-f9tg7f).ant-menu-light
+	> .ant-menu.ant-menu-horizontal
+	> .ant-menu-submenu-selected::after {
+	display: none !important;
+	border: none !important;
+}
+.ant-layout-header {
+	border-bottom: 2px rgba(126, 217, 87, 0.6) solid;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px;
+	border-bottom: 2px rgba(126, 217, 87, 0.3);
+}
+.ant-menu-light,
+.ant-menu-light > .ant-menu {
+	border: none !important;
+}
+
+.ant-menu-submenu-popup
+	.ant-menu-vertical.ant-menu-sub:not([class*='-active']):first-child {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+@media (max-width: 500px) {
+	.ant-menu-submenu-popup {
+		position: absolute;
+		left: 100px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	:where(
+			.css-dev-only-do-not-override-14y1bzh
+		).ant-menu-submenu-popup.ant-menu-submenu {
+		position: absolute !important;
+		left: 120px !important;
+	}
+}
+.ant-image .ant-image-img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border-radius: 20px !important;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu::after,
+.ant-menu-light > .ant-menu.ant-menu-horizontal > .ant-menu-submenu::after {
+	position: absolute;
+	inset-inline: 16px;
+	bottom: 0;
+	border: none !important;
+	transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	content: '';
+}

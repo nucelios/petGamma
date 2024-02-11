@@ -1,0 +1,55 @@
+.wrapper {
+	width: 300px !important;
+	padding: 10px;
+	position: absolute !important;
+	left: 40px;
+	font-size: 13px;
+	top: 350px;
+	border-radius: 20px;
+	font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 950px) {
+	.wrapper {
+		width: 100% !important;
+		position: static !important;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+.select {
+	border: none !important;
+	color: #9f67fd !important;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 13px !important;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.ant-picker-content th {
+	font-size: 15px;
+	box-sizing: border-box;
+	padding-bottom: 10px !important;
+	color: #9f67fd !important;
+	text-transform: capitalize;
+}
+
+.ant-picker-calendar-date-value {
+	width: 40px;
+	height: 30px;
+}
+
+:where(.css-dev-only-do-not-override-14y1bzh).ant-picker-calendar
+	.ant-picker-cell-in-view.ant-picker-cell-selected
+	.ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-14y1bzh).ant-picker-calendar
+	.ant-picker-cell-in-view.ant-picker-cell-range-start
+	.ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-14y1bzh).ant-picker-calendar
+	.ant-picker-cell-in-view.ant-picker-cell-range-end
+	.ant-picker-cell-inner {
+	color: #4a4a4a !important;
+	background-color: rgba(134, 76, 233, 0.2) !important;
+}

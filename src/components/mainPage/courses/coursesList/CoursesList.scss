@@ -1,0 +1,98 @@
+.courses-container {
+	margin: 10vw 0;
+	width: 100%;
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 5px;
+		.title {
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 3vw;
+			font-weight: bold;
+			margin: 5px 0;
+			@media (max-width: 450px) {
+				font-size: 23px;
+			}
+		}
+
+		.pagination-btn {
+			height: max-content;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1vw 3vw;
+			cursor: pointer;
+			border-radius: 5vw;
+			border: 0.1vw solid rgba(159, 103, 253, 0.5);
+			color: rgba(159, 103, 253, 0.5);
+			@media (max-width: 450px) {
+				padding: 5px 20px;
+				font-size: 4vw;
+			}
+		}
+	}
+
+	.courses-list {
+		display: flex;
+		justify-content: space-between;
+		gap: 1vw;
+		overflow: scroll;
+		&__card {
+			min-width: 320px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			border-radius: 2vw;
+			background: #f5f5f5;
+			padding: 2vw;
+			@media (max-width: 450px) {
+				min-width: 140px;
+			}
+		}
+		&__title {
+			font-size: 2vw;
+			font-family: Montserrat;
+			font-weight: 600;
+			color: #9f67fd;
+			margin-bottom: 10px;
+			@media (max-width: 450px) {
+				font-size: 16px;
+			}
+		}
+		&__text {
+			color: #4a4a4a;
+			font-family: Montserrat;
+			font-size: 1.2vw;
+			font-weight: 400;
+			@media (max-width: 450px) {
+				font-size: 13px;
+			}
+		}
+		&__record-button {
+			height: max-content;
+			margin-top: 1vw;
+			display: flex;
+			align-items: center;
+			border-radius: 5vw;
+			border: 0.1vw solid rgba(159, 103, 253, 0.5);
+			background: none;
+			color: #9f67fd;
+			font-family: Montserrat;
+			font-size: 1.3vw;
+			font-weight: 500;
+			padding: 1vw 2vw;
+			align-self: flex-end;
+			&:hover {
+				background-color: #7ed957;
+				color: white !important;
+				border: none;
+			}
+			@media (max-width: 450px) {
+				padding: 1vw 1.5vw;
+				font-size: 13px;
+			}
+		}
+	}
+}

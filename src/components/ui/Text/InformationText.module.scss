@@ -1,0 +1,11 @@
+.infoText {
+	font-family: Montserrat !important;
+	max-width: 600px;
+	margin-bottom: 30px;
+	@media (max-width: 400px) {
+		font-size: 10px;
+	}
+	span {
+		color: red;
+	}
+}
